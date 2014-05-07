@@ -1,0 +1,14 @@
+apply from: "${gradleScriptDir}/maven.gradle"
+
+configurations {
+    compile.extendsFrom providedCompile
+}
+
+dependencies {
+
+
+
+
+
+
+}
