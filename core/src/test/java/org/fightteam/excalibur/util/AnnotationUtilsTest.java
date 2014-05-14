@@ -31,7 +31,7 @@ public class AnnotationUtilsTest {
     public void test01() throws Exception {
         String basePakage = "classpath*:org/fightteam/**/*.class";
         ClassLoader cl = Thread.currentThread().getContextClassLoader();
-        URL url = cl.getResource("org/fightteam/**/*.class");
+        URL url = cl.getResource("org/fightteam/excalibur/AppController.class");
         System.out.println(url);
         url = AnnotationUtilsTest.class.getClassLoader().getResource("org/fightteam/**/*.class");
         System.out.println(url);
