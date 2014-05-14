@@ -11,7 +11,7 @@ import java.io.IOException;
  * @author faith
  * @since 0.0.1
  */
-@WebServlet(name = "app", urlPatterns = "/")
+@WebServlet(name = "app", urlPatterns = "/ccc")
 public class ApplicationController extends HttpServlet {
 
 

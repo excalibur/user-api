@@ -8,7 +8,5 @@ dependencies {
 
 
 
-
-
-
+    providedCompile "org.projectlombok:lombok:1.12.4"
 }

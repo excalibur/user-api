@@ -8,7 +8,9 @@ configurations {
 
 dependencies {
 
+    compile project(":core")
 
+    providedCompile "org.projectlombok:lombok:1.12.4"
 
     providedCompile "javax.servlet:javax.servlet-api:3.1.0",
             'javax.servlet.jsp:javax.servlet.jsp-api:2.3.1'
