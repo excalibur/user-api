@@ -9,7 +9,9 @@ import org.junit.Test;
 
 import java.lang.annotation.Annotation;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -70,5 +72,11 @@ public class AnnotationUtilsTest {
 
         URL path3 = AnnotationUtilsTest.class.getResource("/");
         System.out.println(path3);
+
+        // 获取编译根路径
+        String compilePath = AnnotationUtilsTest.class.getClassLoader().getResource("").getPath();
+        System.out.println(compilePath);
+
+
     }
 }

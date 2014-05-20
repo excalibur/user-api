@@ -14,6 +14,8 @@ import java.util.List;
 /**
  * 主控制器
  *
+ * 进行分发
+ *
  * @author faith
  * @since 0.0.1
  */
