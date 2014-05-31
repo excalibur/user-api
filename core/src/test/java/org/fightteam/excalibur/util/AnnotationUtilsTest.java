@@ -7,12 +7,10 @@ import org.fightteam.excalibur.core.util.AnnotationUtils;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.io.File;
 import java.lang.annotation.Annotation;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * [description]
@@ -78,5 +76,28 @@ public class AnnotationUtilsTest {
         System.out.println(compilePath);
 
 
+    }
+
+
+    @Test
+    public void test04() throws Exception {
+
+        String basePackage = "org.fightteam";
+
+
+        Enumeration<URL> resourcesUrls = AnnotationUtilsTest.class.getClassLoader().getResources("org/fightteam/excalibur/core/factory");
+        while (resourcesUrls.hasMoreElements()){
+            System.out.println("--------------");
+
+//            URL url = resourcesUrls.nextElement();
+
+            File file = new File(resourcesUrls.nextElement().getFile());
+            System.out.println(file);
+            File[] files = file.listFiles();
+
+            for (int i = 0; i < files.length; i++) {
+                System.out.println(files[i]);
+            }
+        }
     }
 }
