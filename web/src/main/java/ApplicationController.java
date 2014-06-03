@@ -6,7 +6,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * [description]
+ * 主分发器
  *
  * @author faith
  * @since 0.0.1
