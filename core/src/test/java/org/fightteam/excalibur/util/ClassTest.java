@@ -59,4 +59,22 @@ public class ClassTest {
         System.out.println(Type.getInternalName(String.class));
 
     }
+
+
+    @Test
+    public void test04() throws Exception {
+
+        ClassReader cr = new ClassReader("java.lang.Runnable");
+        System.out.println(cr.getClassName());
+
+    }
+
+    @Test
+    public void test05() throws Exception {
+
+        // 获取本线程的类加载器
+        ClassLoader ldr = Thread.currentThread().getContextClassLoader();
+
+
+    }
 }
