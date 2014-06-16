@@ -72,6 +72,9 @@ configure(subprojects) { subproject ->
         archives sourcesJar
         archives javadocJar
     }
+    configurations {
+        compile.extendsFrom providedCompile
+    }
     dependencies {
 
         // Logging
@@ -80,7 +83,9 @@ configure(subprojects) { subproject ->
         compile "org.apache.logging.log4j:log4j-slf4j-impl:$log4jVersion"
         runtime "org.apache.logging.log4j:log4j-core:$log4jVersion"
 
+        providedCompile "org.projectlombok:lombok:1.12.4"
 
+        compile 'org.springframework:spring-context:4.0.5.RELEASE'
 
         // Test
         testCompile "junit:junit:$junitVersion"
