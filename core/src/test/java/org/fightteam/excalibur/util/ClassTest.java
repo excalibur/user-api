@@ -8,6 +8,9 @@ import org.objectweb.asm.ClassWriter;
 
 import java.io.File;
 import java.io.FileOutputStream;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Created by excalibur on 2014/5/20.
@@ -75,6 +78,14 @@ public class ClassTest {
         // 获取本线程的类加载器
         ClassLoader ldr = Thread.currentThread().getContextClassLoader();
 
+
+    }
+
+    @Test
+    public void test06() throws Exception {
+//        final ArrayList<String> aa = ["11","333"];
+//        List<String> list = ["item"];
+//        Map<String, Integer> map = {"key" : 1};
 
     }
 }
